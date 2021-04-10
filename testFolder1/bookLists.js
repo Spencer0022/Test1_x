@@ -6,7 +6,7 @@ const add =(array, bookName)=> {
   x1.push(bookName);
   return x1;
   // Change code above this line
-}
+};
 // Change code below this line
 const remove=(arrayOther, bookName)=>{
     let newX = [...arrayOther];
