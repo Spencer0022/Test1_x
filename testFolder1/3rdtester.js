@@ -1,11 +1,14 @@
 Array.prototype.myMap=function(callback){
     let newArray=[];
-    for(let i=0;i<callback.length;i++){
+    for(let i=0;i<this.length;i++){
         newArray.push(callback(this[i]));
     }
-    return newArray;
-};
 
-let x = [12,,3,4,5];
-let newX = x.myMap(item=>item*2);
-console.log(newX);
+    return newArray;
+
+};
+var x = [23, 65, 98, 5];
+
+var x2 = x.myMap(item=>item*2);
+
+console.log(x2);
